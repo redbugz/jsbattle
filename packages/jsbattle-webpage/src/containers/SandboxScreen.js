@@ -69,17 +69,17 @@ export class SandboxScreen extends React.Component {
     }
     return true;
   }
-
   updateAiDefList(mode, opponent) {
+    const bots = ['dummy', 'crazy', 'crawler', 'chicken', 'dodge',  'sniper', 'circler', 'jamro', 'kamikaze']
     let aiDefList = [];
     let teamMode = (mode == 'team');
-    let count = teamMode ? 3 : 1;
+    let count = teamMode ? 5 : 1;
 
     for(let i=0; i < count; i++) {
       let aiDef = JsBattle.createAiDefinition();
       switch(opponent.source) {
         case 'bundled':
-          aiDef.fromFile(opponent.name);
+          aiDef.fromFile(bots[Math.floor(Math.random()*bots.length)]);
           break;
         case 'league':
         case 'local_user':
@@ -180,7 +180,7 @@ export class SandboxScreen extends React.Component {
 
   render() {
     let teamMode = (this.props.mode == 'team');
-    let count = teamMode ? 3 : 1;
+    let count = teamMode ? 5 : 1;
 
     return <div>
         <FullRow>

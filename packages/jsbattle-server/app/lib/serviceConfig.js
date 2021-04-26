@@ -3,7 +3,7 @@ const path = require('path');
 
 let config = {};
 config.data = {
-  "loglevel": "info",
+  "loglevel": "debug",
   "skipEnv": false,
   "cluster": {
     "enabled": false,
@@ -31,7 +31,7 @@ config.data = {
   "league": {
     "scheduleInterval": 30000,
     "timeLimit": 20000,
-    "teamSize": 3,
+    "teamSize": 5,
     "obfuscate": true,
     "historyDuration": 3*24*60*60*1000
   },

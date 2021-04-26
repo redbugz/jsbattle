@@ -333,8 +333,8 @@ class JsBattleBattlefield extends React.Component {
 }
 
 JsBattleBattlefield.defaultProps = {
-  width: 900,
-  height: 600,
+  width: 900*5,
+  height: 600*5,
   battlefieldWidth: 900,
   battlefieldHeight: 600,
   renderer: "debug",
