@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/js/jsbattle.min.js",
   "scripts": {
-    "start": "./dist/jsbattle.js start ...",
+    "start": "./dist/jsbattle.js start --config jsbattle.config.js",
+    "start:worker": "./dist/jsbattle.js worker --config jsbattle.config.js",
     "clean": "rimraf dist && rimraf test/features*",
     "build": "npm run build:server && npm run build:webpage && npm run build:admin",
     "build:admin": "cpx './node_modules/jsbattle-admin/dist/**/*' ./dist/public",

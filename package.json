@@ -5,6 +5,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "start": "npm start --prefix=./packages/jsbattle",
+    "start:dev": "lerna run start:dev",
     "clean": "lerna run clean --stream",
     "lint": "lerna bootstrap && lerna run lint --stream",
     "build": "lerna bootstrap && lerna run build --stream",
@@ -16,11 +17,12 @@
     "audit": "lerna-audit"
   },
   "engines": {
-    "node": ">=0.10.3"
+    "node": "14"
   },
   "devDependencies": {
     "commitizen": "^4.2.2",
     "cz-conventional-changelog": "^3.3.0",
+    "dotenv": "^10.0.0",
     "git-cz": "^4.7.6",
     "lerna": "^3.22.1",
     "lerna-audit": "^1.3.0"
