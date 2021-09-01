@@ -15,7 +15,7 @@
     "commit": "git-cz",
     "update": "for d in ./packages/*; do npm-check-updates -i --packageFile $d/package.json; done",
     "audit": "lerna-audit",
-    "heroku-cleanup": "du -ha --max-depth 1 . | sort -hr && du -ha --max-depth 1 packages | sort -hr && npx lerna exec 'npm prune --production' && du -ha --max-depth 1 . | sort -hr && du -ha --max-depth 1 packages/jsbattle/node_modules | sort -hr"
+    "heroku-cleanup": "du -ha --max-depth 1 . | sort -hr && du -ha --max-depth 1 packages | sort -hr && npx lerna exec 'npm prune --production' && du -ha --max-depth 1 . | sort -hr && du -h  -t 20M . | sort -hr"
   },
   "engines": {
     "node": "14"
