@@ -3,3 +3,5 @@ packages/jsbattle-react
 packages/jsbattle-mockserver
 
 .git
+.jdk
+.heroku-buildpack-graphviz
