@@ -14,7 +14,9 @@
     "ci": "lerna bootstrap && npm run-script clean && npm run-script lint && npm run-script build && npm run-script test",
     "commit": "git-cz",
     "update": "for d in ./packages/*; do npm-check-updates -i --packageFile $d/package.json; done",
-    "audit": "lerna-audit"
+    "audit": "lerna-audit",
+    "heroku-postbuild": "du -ha --max-depth 1 . | sort -hr",
+    "heroku-clean": "du -ha --max-depth 1 . | sort -hr"
   },
   "engines": {
     "node": "14"
