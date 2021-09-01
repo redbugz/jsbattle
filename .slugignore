@@ -5,3 +5,6 @@ packages/jsbattle-mockserver
 .git
 .jdk
 .heroku-buildpack-graphviz
+
+node_modules/git-cz
+packages/jsbattle/node_modules/puppeteer
