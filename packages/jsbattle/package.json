@@ -39,6 +39,7 @@
     "chai": "^4.2.0",
     "cpx": "^1.5.0",
     "cucumber": "^6.0.5",
+    "jsbattle-mockserver": "^3.5.0",
     "pm2": "^4.5.1",
     "rimraf": "^3.0.2"
   },
@@ -46,7 +47,6 @@
     "jsbattle-admin": "^3.5.0",
     "jsbattle-docs": "^3.5.0",
     "jsbattle-engine": "^3.5.0",
-    "jsbattle-mockserver": "^3.5.0",
     "jsbattle-server": "^3.5.0",
     "jsbattle-webpage": "^3.5.0",
     "lodash": "^4.17.20",

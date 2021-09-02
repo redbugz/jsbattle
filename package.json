@@ -3,7 +3,7 @@
   "private": true,
   "version": "3.4.1",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap --hoist",
     "start": "npm start --prefix=./packages/jsbattle",
     "start:dev": "lerna run start:dev",
     "clean": "lerna run clean --stream",
