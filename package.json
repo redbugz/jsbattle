@@ -15,7 +15,7 @@
     "commit": "git-cz",
     "update": "for d in ./packages/*; do npm-check-updates -i --packageFile $d/package.json; done",
     "audit": "lerna-audit",
-    "heroku-cleanup": "npx lerna exec 'npm prune --production' && rm -rf .jdk node_modules/git-cz packages/jsbattle/node_modules/puppeteer && du -h  -t 20M . | sort -hr"
+    "heroku-cleanup": "rm -rf .jdk node_modules/git-cz packages/jsbattle-server/node_modules/puppeteer && du -h  -t 20M . | sort -hr"
   },
   "engines": {
     "node": "14"
