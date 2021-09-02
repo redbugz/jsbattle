@@ -1,6 +1,13 @@
 require('dotenv').config()
 
+const baseUrl = process.env.DYNO ? 'https://fsbattle.herokuapp.com' : 'localhost'
+const port = process.env.PORT || 8080
 module.exports = {
+  "web": {
+    port: port,
+    baseUrl: `${baseUrl}:${port}`,
+    corsOrigin: [`${baseUrl}:${port}`],
+  },
   "auth": {
     "admins": [
       {
