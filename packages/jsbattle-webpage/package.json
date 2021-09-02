@@ -92,6 +92,5 @@
     "webpack-bundle-analyzer": "^4.3.0",
     "webpack-cli": "^4.3.1",
     "webpack-dev-server": "^3.11.1"
-  },
-  "gitHead": "b086d7f5befb0506cc4f1ef9a6450cf2591b9b7d"
+  }
 }
