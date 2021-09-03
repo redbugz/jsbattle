@@ -145,7 +145,8 @@ module.exports = function() {
   this.server.listen(
     port,
     host,
-    () => {
+    (err) => {
+      if (err) this.logger.error("Error starting webserver", err)
       this.logger.info(`webserver started at http://${host}:${port}`)
     }
   );
