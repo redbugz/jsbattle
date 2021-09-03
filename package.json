@@ -15,7 +15,7 @@
     "commit": "git-cz",
     "update": "for d in ./packages/*; do npm-check-updates -i --packageFile $d/package.json; done",
     "audit": "lerna-audit",
-    "heroku-cleanup": "rm -rf .jdk .heroku-buildpack-graphviz node_modules/git-cz node_modules/canvas/ node_modules/@commitlint node_modules/@types* node_modules/webpack node_modules/@lerna node_modules/@octokit/plugin-enterprise-rest node_modules/node-plantuml node_modules/cucumber node_modules/eslint node_modules/commitizen node_modules/node-notifier && du -h  -t 5M . | sort -hr"
+    "heroku-cleanup": "rm -rf .jdk .heroku-buildpack-graphviz node_modules/git-cz node_modules/canvas/ node_modules/@commitlint node_modules/@types* node_modules/webpack node_modules/@lerna node_modules/@octokit/plugin-enterprise-rest node_modules/node-plantuml node_modules/cucumber node_modules/eslint node_modules/commitizen node_modules/node-notifier node_modules/react-scripts && du -h  -t 5M . | sort -hr"
   },
   "engines": {
     "node": "14"
