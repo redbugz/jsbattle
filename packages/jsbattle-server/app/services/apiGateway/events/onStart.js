@@ -129,7 +129,7 @@ module.exports = function() {
   });
 
   let port = this.settings.web.port || 8080;
-  let host = this.settings.web.host || '127.0.0.1';
+  let host = this.settings.web.host || 'localhost';
   if(this.server) {
     this.server.close();
     this.server = null;
