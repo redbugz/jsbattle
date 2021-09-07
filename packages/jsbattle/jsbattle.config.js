@@ -32,6 +32,6 @@ module.exports = {
     "uri": process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017'
   },
   "league": {
-    "scheduleInterval": 600000
+    "scheduleInterval": process.env.LEAGUE_INTERVAL ? parseInt(process.env.LEAGUE_INTERVAL) : 600000
   }
 }

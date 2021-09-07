@@ -58,7 +58,7 @@ canvas {
   background-color: #ffffff;
   color: #343a40 !important;
   border-radius: 5px;
-  padding: 8px !important;
+  /* padding: 8px !important; */
 }
 
 .code-editor-widget {
